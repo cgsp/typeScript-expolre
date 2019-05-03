@@ -1,0 +1,26 @@
+{
+  "name": "typeScript-expolre",
+  "version": "1.0.0",
+  "description": "再次系统学习ts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgsp/typeScript-expolre.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cgsp/typeScript-expolre/issues"
+  },
+  "homepage": "https://github.com/cgsp/typeScript-expolre#readme",
+  "devDependencies": {
+    "tslint": "^5.16.0"
+  },
+  "dependencies": {
+    "typescript": "^3.4.5"
+  }
+}

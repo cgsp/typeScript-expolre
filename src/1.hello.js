@@ -1,14 +1,12 @@
-var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
-    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-    return cooked;
-};
-function test(template, name, age) {
-    console.log(template);
-    console.log(name);
-    console.log(age);
+function fn1(a, b, c) {
+    console.log(a)
+    console.log(b)
+    console.log(c)
 }
-var myname = 'zhailiang';
-var getAge = function () {
-    return 18;
-};
-test(__makeTemplateObject(["hello my name is ", ", i am ", ""], ["hello my name is ", ", i am ", ""]), myname, getAge());
+
+var args1 = [1, 2]
+
+var args2 = [6, 7, 8, 9]
+
+fn1(...args1) // 1 2 undefined
+fn1(...args2) // 6 7 8
