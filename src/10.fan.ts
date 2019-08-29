@@ -3,34 +3,17 @@
  * @Author: John.Guan
  * @Date: 2019-08-27 17:32:15
  * @Last Modified by: John.Guan
- * @Last Modified time: 2019-08-27 18:47:35
+ * @Last Modified time: 2019-08-28 20:05:20
  */
 
-class BeeKeeper {
-  hasMask: boolean
+function gsp<T>(arg: T): T {
+  return arg
 }
 
-class LionKeeper {
-  nametag: string
+interface GspI {
+  <T>(arg: T): T
 }
 
-class Animal {
-  numLength: number
-}
+let mygsp1: <T>(arg: T) => T = gsp
 
-class Bee extends Animal {
-  keeper: BeeKeeper
-}
-
-class Lion extends Animal {
-  keeper: LionKeeper
-}
-
-function createInstanceByFactory<T extends Animal>(
-  CConstructor: new () => T
-): T {
-  return new CConstructor()
-}
-
-createInstanceByFactory(Bee).keeper.hasMask
-createInstanceByFactory(Lion).keeper.nametag
+let mygsp2: GspI = gsp
